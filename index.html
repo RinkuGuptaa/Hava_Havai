@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hava Havai - AI Travel Assistant</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="logo" style="  text-decoration: underline;">Hava Hav<span id="element"></span></div>
+    <div class="plane normal" id="plane"></div>
+    <div class="nav-links">
+      <a href="#mac">Mac</a>
+      <a href="#ipad">iPad</a>
+      <a href="#iphone">iPhone</a>
+      <a href="#watch">Watch</a>
+      <a href="#airpods">AirPods</a>
+      <a href="#tv">TV & Home</a>
+      <a href="#support">Support</a>
+    </div>
+    <div class="menu-icons">
+
+      <img src="https://cdn-icons-png.freepik.com/256/3135/3135715.png?semt=ais_hybrid" alt="Cart" width="30px">
+
+      <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+  </div>
+  <div class="backdrop"></div>
+
+  <div class="mobile-menu">
+    <a href="#mac">Mac</a>
+    <a href="#ipad">iPad</a>
+    <a href="#iphone">iPhone</a>
+    <a href="#watch">Watch</a>
+    <a href="#airpods">AirPods</a>
+    <a href="#tv">TV & Home</a>
+    <a href="#support">Support</a>
+  </div>
+
+  <div class="container">
+    <div class="header">
+      <img
+        src="https://lh3.googleusercontent.com/igkjccSt-wGWUVue3e5u6q7KedFzvHmqv0h0vAAtnk4HB_Zs7Vy6RNLqZnrjyzCIfG8AN7mvanwbC7bQVTix3BpFJRi8BpnDFLl4=rw"
+        alt="Search">
+      <h1>Hava Havai - AI Travel Assistant</h1>
+      <p>Your ultimate travel companion</p>
+      <p class="rating">★★★★★ 5.0 (21 Ratings)</p>
+    </div>
+
+    <div class="content">
+      <p>Welcome to hava havai, your ultimate AI travel assistant!</p>
+      <p>Plan your trips effortlessly with real-time flight updates, airport lounge access, baggage claim assistance,
+        and more.</p>
+      <button onclick="openCustomModal()">Learn More</button>
+    </div>
+
+    <div class="custom-modal" id="customModal">
+      <div class="custom-modal-header">
+        <span>Confirmation Required</span>
+        <button class="close-btn-header" onclick="closeCustomModal()">X</button>
+      </div>
+      <div class="custom-modal-content">
+        <p>Discover the amazing functionalities and tools we have designed for you! If you want, choose Yes; if not,
+          choose No.</p>
+        <div class="modal-buttons">
+          <button onclick="handleYes()">Yes</button>
+          <button onclick="closeCustomModal()">No</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="custom-overlay" id="customOverlay"></div>
+
+
+    <div class="screenshots">
+      <img src="https://play-lh.googleusercontent.com/HXfY_BqeTwkZ0F0ymL2syUZNVHJO30h1cdI0Mrh36Dzm3VLreJogUwtxOsVUVXx2iw=w526-h296-rw" alt="Screenshot 1" data-index="0">
+      <img
+        src="https://play-lh.googleusercontent.com/TE12SSy7tfRXdUXrrM6ifm8mn5CISk407uYwzo-1fmqLCLmnceIzaGeNOTJCuH39nyP-=w526-h296-rw"
+        alt="Screenshot 2" data-index="1">
+      <img src="https://framerusercontent.com/images/HAYffnqZAT13ZI5ZZqsZVzQvdCU.svg" alt="Screenshot 3"
+        data-index="2">
+    </div>
+
+    <div class="modal" id="imageModal">
+      <span class="close-btn">&times;</span>
+      <div class="modal-content">
+        <img src="" alt="Enlarged Image">
+      </div>
+    </div>
+
+    <h2>Key Features</h2>
+    <div class="features">
+      <div class="feature">
+        <img src="https://www.pngall.com/wp-content/uploads/2017/05/Alert-PNG-Image.png" alt="Flight Alerts">
+        <h3>Flight Alerts</h3>
+        <p>Get real-time flight updates, gate changes, and delays.</p>
+      </div>
+      <div class="feature">
+        <img src="https://cdn3.iconfinder.com/data/icons/airport-color-line-2/64/Lounge-64.png" alt="Lounge Access">
+        <h3>Lounge Access</h3>
+        <p>Access exclusive airport lounges with the app.</p>
+      </div>
+      <div class="feature">
+        <img src="https://www.pngall.com/wp-content/uploads/2017/05/Airport-Free-Download-PNG.png" alt="Feature 3">
+        <h3>Travel History</h3>
+        <p>Sync and manage your trip history automatically.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <h2>What’s New</h2>
+  <div class="whats-new">
+    <div class="update">
+      <div class="update-icon">
+        <img
+          src="https://forum.affinity.serif.com/uploads/monthly_2023_02/features_improvements@2x.png.eee78548ff6e1c1dcde0df9cb940254f.png"
+          alt="Update Icon">
+      </div>
+      <div class="update-content">
+        <h3>Version 6.1.4</h3>
+        <p>Released: 29/11/2024</p>
+        <p>Bug fixes for a smoother experience. We've improved performance and resolved some minor glitches to enhance
+          your journey.</p>
+      </div>
+    </div>
+    <div class="update">
+      <div class="update-icon">
+        <img src="https://cdn-icons-png.flaticon.com/128/10435/10435158.png" alt="Feature Icon">
+      </div>
+      <div class="update-content">
+        <h3>New Features</h3>
+        <p>Added support for boarding pass scanning and in-app baggage tracking. Stay updated on your trip like never
+          before!</p>
+      </div>
+    </div>
+  </div>
+
+  <h2>Ratings and Reviews</h2>
+  <div class="reviews">
+    <div class="review">
+      <h3>Rashmish11</h3>
+      <p class="date">18/10/2024</p>
+      <p>A must-have app! It’s an amazing app, my entire trip history and future trips are synced immediately once I
+        signed in...</p>
+    </div>
+    <div class="review">
+      <h3>jugaduDeveloper</h3>
+      <p class="date">10/10/2024</p>
+      <p>Seems interesting! Nice unique features provided like showing...</p>
+    </div>
+  </div>
+
+  <h2>App Privacy</h2>
+  <p class="whats-new">The following data may be collected and linked to your identity: Contact Info, User Content.</p>
+  <footer>
+    <p>&copy; 2024 Havaizada Technology</p>
+  </footer>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
